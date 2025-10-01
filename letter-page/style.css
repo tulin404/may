@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url("start-page/paper-texture-close-up.jpg") fixed center/cover;
+    background: url("../start-page/paper-texture-close-up.jpg") fixed center/cover;
     font-size: 24px;
     display: flex;
 }
