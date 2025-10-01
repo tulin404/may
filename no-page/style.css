@@ -5,12 +5,18 @@
     box-sizing: border-box;
 }
 
+html {
+    background: url("start-page/paper-texture-close-up.jpg") fixed center/cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+}
+
 body {
     height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url("../start-page/paper-texture-close-up.jpg") fixed center/cover;
 }
 
 div {
