@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../start-page/paper-texture-close-up.jpg") fixed center/cover;
+    font-size: 24px;
+    display: flex;
+}
+
+div {
+    display: flex;
+    width: 100%;
+}
+/* HERE */
+
+.here {
+    align-items: center;
+    flex-direction: column;
+}
+
+#here-txt {
+    opacity: 0;
+    font-size: 3em;
+    font-family: "Klee One";
+    animation: fadeInY 1s 0.5s forwards;
+}
+
+.img-container p {
+    padding: 0.8em;
+}
+
+.img-container {
+    opacity: 0;
+    font-family: "Fuzzy Bubbles";
+    padding-top: 1em;
+    text-align: center;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.89);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    margin-bottom: 8em;
+    animation: fadeIn 1s 2s forwards;
+}
+
+#arrow {
+    opacity: 0;
+    font-family: "Klee One";
+    font-size: 4em;
+    padding: 0.8em 0;
+    animation: fadeInY 1s 1s forwards;
+}
+
+/* HEADER */
+
+header div {
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInY 1s 2.5s forwards;
+}
+
+header p {
+    opacity: 0;
+    animation: fadeInY 1s 2.5s forwards;
+    font-family: "Delius", cursive;
+    font-size: 48px;
+}
+
+#header-txt {
+    color: rgb(175, 13, 175);
+    padding-bottom: 1em;
+}
+
+.header {
+    padding-top: 16px;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* TEXT */
+.text {
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3em;
+    flex-direction: column;
+    font-family: "Klee One";
+    font-size: 16px;
+    animation: fadeInY 1s 2.5s forwards;
+}
+
+.text p {
+    color: rgb(209, 54, 54);
+    font-weight: bold;
+    font-size: 1.8em;
+    padding: 1em 0;
+}
+
+.img2-container {
+    font-family: "Fuzzy Bubbles";
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 1.5em;
+}
+
+.img2-container p {
+    padding-bottom: 0;
+    font-size: 16px;
+    color: black;
+}
+
+#kiss {
+    margin: 2em 0;
+    justify-content: center;
+}
+
+/* BYE */
+
+.bye div {
+    font-family: "Ms Madi";
+    font-size: 24px;
+    color: black;
+    padding-right: 10px;
+    justify-content: end;
+}
+
+.bye {
+    flex-direction: column;
+}
+
+.bye p {
+    font-family: "Ms Madi";
+    font-size: 36px;
+    color: black;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInY {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    display: flex;
+    /* border: 1px solid blue; */
+    width: 100%;
+    flex-direction: column;
+}
+
+button {
+    font-family: "Playwrite DE Grund", sans-serif;
+    border-radius: 8px;
+    border: 2px solid rgb(209, 54, 54);
+    font-size: 20px;
+    padding: 0.6em 0;
+    width: 10em;
+    background-color: rgba(255, 253, 253, 0.438);
+}
+
+body {
+    background: url("paper-texture-close-up.jpg") fixed center/cover;
+    font-size: 24px;
+    display: flex;
+    height: 100dvh;
+    flex: 1;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+#title {
+    animation: fadeIn 1s;
+    font-size: 1.8em;
+    font-family: "Playpen Sans", cursive;
+}
+
+#sub {
+    padding-top: 0.2em;
+    font-size: 0.9em;
+    font-family: "Klee One", sans-serif;
+}
+
+.txt-container {
+    opacity: 0;
+    text-align: center;
+    animation: 1s fadeInY 1s forwards;
+}
+
+.btn-container {
+    opacity: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1.5em;
+    animation: 1s fadeInY 2s forwards;
+}
+
+.gif {
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    animation: 1s fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInY {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
