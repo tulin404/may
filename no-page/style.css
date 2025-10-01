@@ -7,9 +7,6 @@
 
 html {
     background: url("start-page/paper-texture-close-up.jpg") fixed center/cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size:cover;
 }
 
 body {
